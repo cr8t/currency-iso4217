@@ -1,0 +1,20 @@
+[package]
+name = "currency-iso4217"
+version = "0.1.0"
+edition = "2021"
+authors = ["EBDS Rust Developers"]
+description = "ISO 4217 currency codes"
+keywords = ["no-std", "iso-4217", "currency"]
+categories = ["no-std"]
+repository = "https://github.com/ebds-rs/currency_iso4217"
+license = "MIT"
+
+[dependencies.serde]
+version = "1"
+features = ["alloc", "derive"]
+optional = true
+
+[features]
+std = []
+serde = ["dep:serde"]
+serde-std = ["serde/std", "std"]
