@@ -18,3 +18,4 @@ optional = true
 std = []
 serde = ["dep:serde"]
 serde-std = ["serde/std", "std"]
+slow-tests = []
