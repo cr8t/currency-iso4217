@@ -24,7 +24,7 @@ use std::fmt;
 #[repr(u32)]
 #[rustfmt::skip]
 #[allow(clippy::zero_prefixed_literal)]
-#[derive(Clone, Copy, Debug, Default, PartialEq)]
+#[derive(Clone, Copy, Debug, Default, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Deserialize, serde::Serialize))]
 pub enum Currency {
     /// United Arab Emirates dirham United Arab Emirates
